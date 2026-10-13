@@ -1,0 +1,6 @@
+# pnpm 12 fails installs on dependency build scripts nobody has approved.
+# These packages ship prebuilt binaries as optional dependencies and do not need their scripts.
+allowBuilds:
+  esbuild: false
+  sharp: false
+  unrs-resolver: false
